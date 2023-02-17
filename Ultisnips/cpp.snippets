@@ -1,4 +1,4 @@
-snippet cpp "cpp code initialization
+snippet cpp "cpp code initialization"
 #include <iostream>
 #include <cstring>
 #include <algorithm>
@@ -11,3 +11,20 @@ int main() {
 }
 endsnippet
 
+snippet #inc "new header"
+#include <${1}>
+endsnippet
+
+snippet con "const"
+const int N = ${1}
+endsnippet
+
+snippet for "for loop: for (int i = 0; i < n; i++)"
+for (int ${1} = ${2}; ${3}; ${4})
+	${0}
+endsnippet
+
+snippet long "typedef long long LL"
+typedef long long LL;
+${0}
+endsnippet

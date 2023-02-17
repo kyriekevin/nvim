@@ -284,6 +284,9 @@ Plug 'gcmt/wildfire.vim' " in Visual mode, type k' to select all text in '', or 
 
 " Auto Complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" LeetCode
+" Plug 'ianding1/leetcode.vim'
 call plug#end()
 
 " ==================== Dress up my vim ====================
@@ -334,7 +337,7 @@ let g:mkdp_refresh_slow = 0
 let g:mkdp_command_for_global = 0
 let g:mkdp_open_to_the_world = 0
 let g:mkdp_open_ip = ''
-let g:mkdp_browser = 'google-chrome-stable'
+let g:mkdp_browser = 'chromium'
 let g:mkdp_echo_preview_url = 0
 let g:mkdp_browserfunc = ''
 let g:mkdp_preview_options = {
@@ -465,3 +468,12 @@ nmap <leader>aw  <Plug>(coc-codeaction-selected)w
 " let g:coc_snippet_next = '<c-e>'
 " let g:coc_snippet_prev = '<c-n>'
 " imap <C-e> <Plug>(coc-snippets-expand-jump)
+
+
+" ==================== LeetCode ====================
+" nnoremap <leader>ll :LeetCodeList<cr>
+" nnoremap <leader>lt :LeetCodeTest<cr>
+" nnoremap <leader>ls :LeetCodeSubmit<cr>
+" nnoremap <leader>li :LeetCodeSignIn<cr>
+" 
+" let g:leetcode_browser = "chrome"
