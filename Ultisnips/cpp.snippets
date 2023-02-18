@@ -1,3 +1,4 @@
+# Basic cpp snippet
 snippet cpp "cpp code initialization"
 #include <iostream>
 #include <cstring>
@@ -27,4 +28,31 @@ endsnippet
 snippet long "typedef long long LL"
 typedef long long LL;
 ${0}
+endsnippet
+
+# algorithm snippet
+snippet intlo "lowbit"
+int lowbit(int x) {
+	return x & -x;
+}
+${0}
+endsnippet
+
+snippet intlo "tree array"
+int lowbit(int x) {
+	return x & -x;
+}
+
+void update(int x, int c) {
+	for (int i = x; i <= n; i += lowbit(i))
+		tr[i] += c;
+}
+
+int query(int x) {
+	int res = 0;
+	for (int i = x; i; i -= lowbit(i))
+		res += tr[i];
+	return res;
+}
+
 endsnippet
