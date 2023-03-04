@@ -251,7 +251,7 @@ func! CompileRunGcc()
 		set splitbelow
 		:sp
 		:res -5
-		:term go sun .
+		:term go run .
 	endif
 endfunc
 
