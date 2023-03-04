@@ -242,6 +242,11 @@ func! CompileRunGcc()
 		exec "InstantMarkdownPreview"
 	elseif &filetype == 'vimwiki'
 		exec "MarkdownPreview"
+	elseif &filetype == 'java'
+		set splitbelow
+		:sp
+		:res -5
+		term javac % && time java %<
 	endif
 endfunc
 
@@ -409,7 +414,7 @@ let g:wildfire_objects = {
 \ }
 
 " ==================== coc.nvim ====================
-let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-pyright']
+let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-pyright', 'coc-java']
 
 " TextEdit might fail if hidden is not set.
 set hidden

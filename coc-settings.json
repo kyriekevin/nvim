@@ -54,7 +54,8 @@
 		"jsonc",
 		"python",
 		"c",
-		"cpp"
+		"cpp",
+		"java"
 	],
 	"languageserver": {
 		"bash": {
