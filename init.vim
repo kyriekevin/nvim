@@ -291,16 +291,15 @@ Plug 'honza/vim-snippets'
 " Editor Enhancement
 Plug 'tpope/vim-surround' " type yskw' to wrap the word with '' or type cs'` to change 'word' to `word`
 Plug 'gcmt/wildfire.vim' " in Visual mode, type k' to select all text in '', or type k) k] k} kp
+Plug 'jiangmiao/auto-pairs'
+Plug 'luochen1990/rainbow'
 
 " Auto Complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" LeetCode
-" Plug 'ianding1/leetcode.vim'
-
 " Go
-" Plug 'fatih/vim-go', {'for': ['go', 'vim-plug'], 'tag': '*'}
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', {'for': ['go', 'vim-plug'], 'tag': '*'}
+" Plug 'fatih/vim-go'
 call plug#end()
 
 " ==================== Dress up my vim ====================
@@ -423,7 +422,7 @@ let g:wildfire_objects = {
 \ }
 
 " ==================== coc.nvim ====================
-let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-pyright', 'coc-java', 'coc-go']
+let g:coc_global_extensions = ['coc-json', 'coc-vimlsp', 'coc-pyright', 'coc-java', 'coc-go', 'coc-sh']
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -483,15 +482,6 @@ nmap <leader>aw  <Plug>(coc-codeaction-selected)w
 " let g:coc_snippet_prev = '<c-n>'
 " imap <C-e> <Plug>(coc-snippets-expand-jump)
 
-
-" ==================== LeetCode ====================
-" nnoremap <leader>ll :LeetCodeList<cr>
-" nnoremap <leader>lt :LeetCodeTest<cr>
-" nnoremap <leader>ls :LeetCodeSubmit<cr>
-" nnoremap <leader>li :LeetCodeSignIn<cr>
-" 
-" let g:leetcode_browser = "chrome"
-
 " ==================== vim-go ====================
 let g:go_echo_go_info = 0
 let g:go_doc_popup_window = 1
@@ -520,3 +510,6 @@ let g:go_highlight_types = 1
 let g:go_highlight_variable_assignments = 0
 let g:go_highlight_variable_declarations = 0
 let g:go_doc_keywordprg_enabled = 0
+
+" ==================== rainbow ===================
+let g:rainbow_active = 1
