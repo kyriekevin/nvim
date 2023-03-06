@@ -7,3 +7,33 @@ func main() {
 	${0}
 }
 endsnippet
+
+snippet max
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+
+	return b
+}
+endsnippet
+
+snippet min
+func min(a, b int) int {
+	if a > b {
+		return b
+	}
+
+	return a
+}
+endsnippet
+
+snippet abs
+func abs(n int) int {
+	if n < 0 {
+		n = -n
+	}
+
+	return n
+}
+endsnippet
