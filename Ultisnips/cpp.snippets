@@ -25,11 +25,10 @@ for (int ${1} = ${2}; ${3}; ${4})
 	${0}
 endsnippet
 
-snippet for{ "for loop: for (int i = 0; i < n; i++)"
-for (int ${1} = ${2}; ${3}; ${4}) {
-	${5}
+snippet while
+while (${1}) {
+	${2}	
 }
-${0}
 endsnippet
 
 snippet long "typedef long long LL"
@@ -160,6 +159,16 @@ bool cmp(vector<int> &A, vector<int> &B) {
 	}
 
 	return true;
+}
+
+endsnippet
+
+snippet find
+int find(int x) {
+	if (p[x] != x)
+		p[x] = find(p[x]);
+	
+	return p[x];
 }
 
 endsnippet

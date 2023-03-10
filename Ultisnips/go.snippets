@@ -8,6 +8,10 @@ func main() {
 }
 endsnippet
 
+snippet con
+const N int = ${0}
+endsnippet
+
 snippet max
 func max(a, b int) int {
 	if a > b {
@@ -36,4 +40,22 @@ func abs(n int) int {
 
 	return n
 }
+endsnippet
+
+snippet find
+func find(x int) int {
+	if p[x] != x {
+		p[x] = find(p[x])
+	}
+
+	return p[x]
+}
+
+endsnippet
+
+snippet qread
+out := bufio.NewWriter(os.Stdout)
+in := bufio.NewReader(os.Stdin)
+defer out.Flush()
+
 endsnippet
